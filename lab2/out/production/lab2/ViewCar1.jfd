@@ -1,0 +1,110 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][]"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "view car"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 1,alignx center,growx 0"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$columnConstraints": "[843,fill]"
+				"$rowConstraints": "[][][][]"
+				"$layoutConstraints": "hidemode 3"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table1"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+							add( new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+						}, new java.util.Vector {
+							add( "brand" )
+							add( "year" )
+							add( "serial number" )
+							add( "seats" )
+							add( "certificace" )
+							add( "model number" )
+							add( "available" )
+							add( "city" )
+							add( "manifacturers" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+							add( false )
+						}, new java.util.Vector {
+							add( new com.jformdesigner.model.SwingTableColumn( null, 0, 5, 0, true ) )
+							add( null )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 95, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 65, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 100, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( null, 105, 0, 0, true ) )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						"background": sfield java.awt.Color white
+						"autoResizeMode": 0
+						auxiliary() {
+							"model.forceValue": true
+						}
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "delete"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "button1MousePressed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 3,alignx center,growx 0"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 2 3 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1115, 485 )
+		} )
+	}
+}
