@@ -24,6 +24,20 @@ public class CreatePanel extends JPanel {
     }
 
     private void button1MouseClicked(MouseEvent e) {
+        if(textField1.getText().equals("")||textField2.getText().equals("")||textField3.getText().equals("")||textField4.getText().equals("")||textField5.getText().equals("")||textField6.getText().equals("")||textField7.getText().equals("")||textField8.getText().equals("")||textField9.getText().equals(""))
+        {
+            JOptionPane.showMessageDialog(this,"empty input");
+            textField1.setText("");
+            textField2.setText("");
+            textField3.setText("");
+            textField4.setText("");
+            textField5.setText("");
+            textField6.setText("");
+            textField7.setText("");
+            textField8.setText("");
+            textField9.setText("");
+            return;
+        }
 
         String brand=textField1.getText();
         int year=Integer.parseInt(textField2.getText());
@@ -34,6 +48,8 @@ public class CreatePanel extends JPanel {
         boolean available=Boolean.parseBoolean(textField7.getText());
         String city=textField8.getText();
         String manufacturers=textField9.getText();
+
+
 
         String check_1="(([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))-02-29)";
         Pattern re_1=Pattern.compile(check_1);
